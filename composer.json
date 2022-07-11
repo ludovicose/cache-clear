@@ -1,0 +1,12 @@
+{
+    "name": "spark/cache-clear",
+    "description": "Package to clear cache",
+    "authors": [
+        {
+            "name": "Aidar",
+            "email": "kanybek@spark.kz"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev"
+}
