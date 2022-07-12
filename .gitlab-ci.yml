@@ -4,4 +4,6 @@ stages:
 deploy:
   stage: deploy
   script:
-    - 'curl --header "Job-Token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"" --data tag=<tag> "${CI_API_V4_URL}/projects/65/packages/composer"'
+    -  apk add curl  
+    - 'curl --header "Job-Token: $CI_JOB_TOKEN" --data tag=<tag> "${CI_API_V4_URL}/projects/$CI_PROJECT_ID/packages/composer"'
+
