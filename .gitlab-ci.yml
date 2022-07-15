@@ -6,4 +6,4 @@ deploy_composer:
     - shell
   stage: deploy
   script:
-    - curl -sS --show-error --fail --data tag=${CI_COMMIT_TAG} "https://__token__:GFyLYL-y9y-fxdBq7x3-@gitlab.spark.kz/api/v4/projects/65/packages/composer"
+    - curl -sS --show-error --fail --data tag=1.1.1 "https://__token__:GFyLYL-y9y-fxdBq7x3-@gitlab.spark.kz/api/v4/projects/65/packages/composer"
