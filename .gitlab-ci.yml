@@ -1,9 +1,3 @@
-stages:
-  - deploy
-
-deploy_composer:
-  tags:
-    - shell
-  stage: deploy
-  script:
-    - curl -sS --show-error --fail --data tag=${CI_COMMIT_TAG} "https://__token__:${DEPLOY_TOKEN}@gitlab.spark.kz/api/v4/projects/${CI_PROJECT_ID}/packages/composer"
+include:
+  - project: 'templates/ci-cd-library'
+    file: '.gitlab-ci.yml'
