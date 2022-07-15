@@ -7,6 +7,5 @@
             "email": "kanybek@spark.kz"
         }
     ],
-    "require": {},
-    "minimum-stability": "dev"
+    "require": {}
 }
