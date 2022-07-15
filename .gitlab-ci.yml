@@ -2,7 +2,7 @@ stages:
   - deploy
 
 deploy_composer:
-  only:
+  tags:
     - docker
   stage: deploy
   script:
