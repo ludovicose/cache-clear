@@ -1,11 +1,27 @@
 {
     "name": "spark/cache-clear",
     "description": "Package to clear cache",
+    "license": "MIT",
+    "homepage": "https://gitlab.spark.kz/libraries/cache-clear",
+    "autoload": {
+        "psr-4": {
+            "Spark\\CacheClear\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Aidar",
             "email": "kanybek@spark.kz"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spark\\CacheClear\\CacheClearServiceProvider"
+            ]
+        }
+    }
 }
