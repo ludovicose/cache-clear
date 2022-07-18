@@ -2,6 +2,7 @@
     "name": "spark/cache-clear",
     "description": "Package to clear cache",
     "license": "MIT",
+    "type": "library",
     "homepage": "https://gitlab.spark.kz/libraries/cache-clear",
     "autoload": {
         "psr-4": {
